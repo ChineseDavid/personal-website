@@ -1,0 +1,86 @@
+{
+  "id": "4614416",
+  "name": "简历编辑",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6900737",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "1488900",
+      "name": "删除",
+      "font_class": "delete",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "12592398",
+      "name": "设置",
+      "font_class": "setting",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "wechat",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "201577",
+      "name": "3.1电话",
+      "font_class": "phone",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "907617",
+      "name": "姓名",
+      "font_class": "name",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "4488849",
+      "name": "性别",
+      "font_class": "sex",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "4552970",
+      "name": "邮箱",
+      "font_class": "email",
+      "unicode": "e908",
+      "unicode_decimal": 59656
+    },
+    {
+      "icon_id": "10156391",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "13638695",
+      "name": "工作",
+      "font_class": "experience",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "37635093",
+      "name": "学历-L",
+      "font_class": "edu",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    }
+  ]
+}

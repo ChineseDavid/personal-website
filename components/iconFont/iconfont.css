@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4614416 */
+  src: url('iconfont.woff2?t=1731747901999') format('woff2'),
+       url('iconfont.woff?t=1731747901999') format('woff'),
+       url('iconfont.ttf?t=1731747901999') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e60b";
+}
+
+.icon-delete:before {
+  content: "\e60a";
+}
+
+.icon-setting:before {
+  content: "\e74b";
+}
+
+.icon-wechat:before {
+  content: "\e600";
+}
+
+.icon-phone:before {
+  content: "\e601";
+}
+
+.icon-name:before {
+  content: "\e609";
+}
+
+.icon-sex:before {
+  content: "\e62d";
+}
+
+.icon-email:before {
+  content: "\e908";
+}
+
+.icon-geren:before {
+  content: "\e654";
+}
+
+.icon-experience:before {
+  content: "\e656";
+}
+
+.icon-edu:before {
+  content: "\e637";
+}
+

@@ -1,0 +1,56 @@
+.basic-item-size {
+  width: 30%;
+  margin-top: 10px;
+}
+.basic-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .basic-item {
+    display: flex;
+    width: 30%;
+    border-radius: 5px;
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+    overflow: hidden;
+    @extend .basic-item-size;
+    .editor-icon {
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    .editor-input {
+      flex: 1;
+      border: none;
+      &:focus-visible, &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+    &:focus-within {
+      box-shadow: 0 0 4px 0 #1890ff;
+      transition: .3s;
+    }
+  }
+  .basic-blank {
+    @extend .basic-item-size;
+  }
+}
+.editor-textarea {
+  border: 1px solid #bfbfbf;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 120px;
+  line-height: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  &:focus-within {
+    border: 1px solid #1890ff;
+    transition: .3s;
+    outline: none;
+  }
+}

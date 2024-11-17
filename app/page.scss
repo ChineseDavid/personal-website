@@ -1,0 +1,45 @@
+.home {
+  .main-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    background-color: #ffffff33;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 800px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 0 #00000033;
+    .title {
+      text-align: center;
+      font-size: 40px;
+    }
+    .describe {
+      text-align: center;
+      font-size: 28px;
+      color: #000000cc;
+      margin-bottom: 20px;
+    }
+    .item-box {
+      border-top: 2px solid #00000066;
+      border-bottom: 2px solid #00000066;
+      padding: 10px 0;
+      .item-title {
+        font-size: 24px;
+      }
+      .item-list {
+        .item {
+          background-color: #00000033;
+          padding: 5px 10px;
+          border-radius: 4px;
+          margin: 10px 0;
+          &:hover {
+            cursor: pointer;
+            background-color: #00000055;
+          }
+        }
+      }
+    }
+  }
+}

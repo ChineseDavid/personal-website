@@ -1,0 +1,164 @@
+@import "@/common/common.scss";
+.lottery-page {
+  padding: 100px 0;
+  .title{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    input{
+      width: 100%;
+      font-size: 42px;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+    }
+    .setting-icon {
+      position: absolute;
+      right: -30px;
+      top: 18px;
+      &:hover {
+        cursor: pointer;
+      }
+      .iconfont {
+        font-size: 36px;
+      }
+    }
+  }
+  .lottery-canvas{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+    .pointer{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      // transform: translate(-50%,-50%)rotate(90deg);
+      transition: .3s;
+      width: 20px;
+      height: 300px;
+      .long-pointer {
+        position: absolute;
+        top: 50px;
+        border-bottom: 100px solid yellow;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      .short-pointer {
+        position: absolute;
+        top: 150px;
+        border-top: 30px solid yellow;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      .center-pointer {
+        position: absolute;
+        top: 145px;
+        left: 5px;
+        background-color: #595959;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .lottery-button {
+    margin-top: 50px;
+    text-align: center;
+    .button {
+      @extend .common-button;
+    }
+  }
+  .lottery-option {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 40px;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 10px;
+    .option-select{
+      display: flex;
+      justify-content: center;
+      .select-item {
+        padding: 4px 0;
+        margin: 0 16px;
+        border-bottom: 2px solid #00000000;
+        &:hover {
+          cursor: pointer;
+        }
+        &.active{
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+    .lottery-table{
+      margin-top: 20px;
+      max-height: 350px;
+      overflow-y: auto;
+      &.is-by-name {
+        table {
+          .option-chance {
+            display: none;
+          }
+        }
+      }
+      table {
+        margin: 0 auto;
+        thead{
+          position: sticky;
+          top: 0;
+          z-index: 1;
+          transform: translateY(-1px);
+          background-color: white;
+          line-height: 34px;
+          .option-delete .iconfont{
+            display: inline-block;
+            color: #d48806;
+            font-weight: normal;
+          }
+        }
+        td {
+          padding: 2px 4px;
+        }
+        tbody tr {
+          &:hover{
+            .iconfont{
+              display: inline-block;
+            }
+          }
+        }
+        .option-index {
+          width: 40px;
+          text-align: center;
+        }
+        .option-name {
+          width: 200px;
+        }
+        .option-chance {
+          width: 100px;
+        }
+        .option-delete {
+          width: 40px;
+          text-align: center;
+          .iconfont{
+            display: none;
+            font-size: 24px;
+            color: #d4380d;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .option-buttons{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      .button {
+        @extend .common-button;
+      }
+    }
+  }
+}
